@@ -3,7 +3,6 @@ public class main {
     public static void main(String[] args) {
         Scanner ler = new Scanner(System.in);
         
-        //Selecionar a data inicial
         System.out.println("Digite o dia inicial: ");
         int dia1 = ler.nextInt();
         System.out.println("Digite o mês inicial: ");
@@ -11,7 +10,7 @@ public class main {
         System.out.println("Digite o ano inicial: ");
         int ano1 = ler.nextInt();
 
-        //Selecionar a data final
+       
         System.out.println("\nPara saber a diferença de datas\nDigite o dia: ");
         int dia2 = ler.nextInt();
         System.out.println("Digite o mês: ");
@@ -19,11 +18,10 @@ public class main {
         System.out.println("Digite o ano final: ");
         int ano2 = ler.nextInt();
 
-        //Calcular a diferença entre as datas
         int idade = ano2 - ano1;
         int somameses = mes2 - mes1;
         int somadias = dia2 - dia1;
-//Array com a quantidade de dias em cada mês
+
 int[] diasPorMes = {0, 31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31};
 
 if (somadias < 0) {
